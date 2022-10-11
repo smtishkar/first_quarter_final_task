@@ -1,4 +1,17 @@
-﻿int size = 3;
+﻿Console.Clear();
+int size = 3;
+string[] array = FillArray(size);
+PrintArray(array);
+Console.WriteLine();
+
+for (int i = 0; i < size; i++)
+{
+    if (array[i].Length <3)
+        {
+            Console.Write($"{array[i]} ");
+        }
+}
+
 string[] FillArray(int size)
 {
     string[] arr = new string[size];
